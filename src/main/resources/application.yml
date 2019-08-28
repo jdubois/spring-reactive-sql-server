@@ -1,8 +1,9 @@
 
-spring.data.mssql.host=asc-server.database.windows.net
-spring.data.mssql.port=1433
-spring.data.mssql.database=asc-database
-spring.data.mssql.username=
-spring.data.mssql.password=
-
-jdbc:sqlserver://asc-server.database.windows.net:1433;database=asc-database;user=judubois@asc-server;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+spring:
+  data:
+    mssql:
+      host: asc-server.database.windows.net
+      port: 1433
+      database: asc-database
+      username: judubois@asc-server
+      password: xxxxxxxxxxxxxxxxx
