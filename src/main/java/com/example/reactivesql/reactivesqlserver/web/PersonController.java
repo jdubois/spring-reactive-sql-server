@@ -9,4 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonController {
 
     private final PersonRepository personRepository;
+
+    public PersonController(PersonRepository personRepository) {
+        this.personRepository = personRepository;
+    }
 }
