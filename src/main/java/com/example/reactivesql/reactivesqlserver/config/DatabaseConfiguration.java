@@ -31,17 +31,13 @@ public class DatabaseConfiguration extends AbstractR2dbcConfiguration {
     @Bean
     @Override
     public MssqlConnectionFactory connectionFactory() {
-        return new MssqlConnectionFactory(getBuild());
-    }
-
-    private MssqlConnectionConfiguration getBuild() {
         log.info("Connecting to database '{}'...", host);
-        return MssqlConnectionConfiguration.builder()
+        return new MssqlConnectionFactory(MssqlConnectionConfiguration.builder()
                 .host(host)
                 .port(1433)
                 .database(database)
                 .username(username)
                 .password(password)
-                .build();
+                .build());
     }
 }
