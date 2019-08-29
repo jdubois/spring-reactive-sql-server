@@ -13,7 +13,7 @@ public class Person {
 
     private String lastName;
 
-    private String email;
+    private String company;
 
     public Long getId() {
         return id;
@@ -39,12 +39,12 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public String getEmail() {
-        return email;
+    public String getCompany() {
+        return company;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCompany(String company) {
+        this.company = company;
     }
 }
 
