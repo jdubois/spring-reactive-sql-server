@@ -37,11 +37,11 @@ public class DatabaseConfiguration extends AbstractR2dbcConfiguration {
     private MssqlConnectionConfiguration getBuild() {
         log.info("Connecting to database '{}'...", host);
         return MssqlConnectionConfiguration.builder()
-                        .host(host)
-                        .port(1433)
-                        .database(database)
-                        .username(username)
-                        .password(password)
-                        .build();
+                .host(host)
+                .port(1433)
+                .database(database)
+                .username(username)
+                .password(password)
+                .build();
     }
 }
